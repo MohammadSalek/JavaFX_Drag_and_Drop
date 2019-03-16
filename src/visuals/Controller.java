@@ -23,7 +23,7 @@ public class Controller {
         rect.setOnMouseEntered(event -> rect.setCursor(Cursor.HAND));
 
         rect.setOnMousePressed(event -> {
-            System.out.println("Mouse Pressed.");
+            System.out.println("Mouse Pressed!");
             sceneX = event.getSceneX();
             sceneY = event.getSceneY();
             shapeX = ((Rectangle) event.getSource()).getTranslateX();
@@ -34,7 +34,7 @@ public class Controller {
         });
 
         rect.setOnMouseDragged(event -> {
-//            System.out.println("Mouse Dragged.");
+//            System.out.println("Mouse Dragged!");
             double offsetX = event.getSceneX() - sceneX;
             double offsetY = event.getSceneY() - sceneY;
             double newShapeX = shapeX + offsetX;
@@ -47,7 +47,7 @@ public class Controller {
         });
 
         rect.setOnMouseReleased(event -> {
-            System.out.println("Released!");
+            System.out.println("Mouse Released!");
             rect.setMouseTransparent(false);
             rect.setEffect(null);
         });
