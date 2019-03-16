@@ -1,2 +1,2 @@
 # JavaFX Drag and Drop
-sample shape Drag and Drop
+Sample shape Drag and Drop using mouse
