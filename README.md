@@ -1,2 +1,2 @@
-# JavaFX_Drag_and_Drop
-JavaFX: Sample Shape Drag and Drop
+# JavaFX Drag and Drop
+sample shape Drag and Drop
