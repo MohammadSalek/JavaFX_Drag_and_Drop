@@ -9,7 +9,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        primaryStage.setTitle("Drag and Drop sample - by Mohammad Salek");
+        primaryStage.setTitle("JavaFX Drag and Drop Sample - by Mohammad Salek");
         final FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("visuals/sample.fxml"));
         fxmlLoader.setController(new Controller());
@@ -19,7 +19,6 @@ public class Main extends Application {
         primaryStage.setScene(mainScene);
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);

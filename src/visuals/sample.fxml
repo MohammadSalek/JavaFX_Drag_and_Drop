@@ -3,15 +3,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Pane layoutX="32.0" layoutY="69.0" prefHeight="262.0" prefWidth="537.0">
-         <children>
-            <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="88.0" layoutX="344.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="88.0" />
-            <Rectangle fx:id="rect0" arcHeight="5.0" arcWidth="5.0" fill="#51ff1f" height="88.0" layoutX="114.0" layoutY="87.0" stroke="BLACK" strokeType="INSIDE" width="88.0" />
-         </children>
-      </Pane>
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <Pane layoutX="32.0" layoutY="69.0" prefHeight="262.0" prefWidth="537.0">
+      <Rectangle fx:id="borderRect" arcHeight="5.0" arcWidth="5.0" fill="#ffffff9c" height="200.0" layoutX="39.0"
+                 layoutY="31.0" stroke="BLACK" strokeType="INSIDE" width="459.0"/>
+      <Text layoutX="113.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source (Drag)"/>
+      <Text layoutX="350.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dest (Drop)"/>
+      <Rectangle fx:id="dest" arcHeight="5.0" arcWidth="5.0" fill="#ff6f1f" height="88.0" layoutX="344.0"
+                 layoutY="108.0" stroke="BLACK" strokeType="INSIDE" width="88.0"/>
+      <Rectangle fx:id="source" arcHeight="5.0" arcWidth="5.0" fill="#51ff1f" height="88.0" layoutX="114.0"
+                 layoutY="108.0" stroke="BLACK" strokeType="INSIDE" width="88.0"/>
+   </Pane>
 </AnchorPane>
